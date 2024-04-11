@@ -1,4 +1,4 @@
-:root{
+:root {
     --bg-default: linear-gradient(
         90deg,
         rgba(20,20,20,1) 0%,
@@ -8,15 +8,28 @@
     );
     --txt-color-default: white;
     --txt-font-default: Verdana;
+    --txt-fontsize-default: 16px;
+    --txt-fontsize-header: 24px;
 }
 
-html, body{
+html, body {
     height: 100%;
 }
 
-body{
+*{
+    font-size: var(--txt-fontsize-default);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: var(--txt-fontsize-header);
+}
+
+body {
     margin: 0;
-    
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 16px;
+
     background: var(--bg-default);
     color: var(--txt-color-default);
     font-family: var(--txt-font-default);
@@ -26,6 +39,35 @@ body{
     align-items: center;
 }
 
-header{
-    max-width: 80%;
+main{
+    width: 100%;
+}
+
+.content-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.content-list > .content-item {
+    padding: 10px;
+
+    border: 3px solid #003252;
+    border-radius: 10%;
+    background-color: #004875;
+
+    width: 120px;
+    aspect-ratio: 4 / 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.content-list > div img {
+    height: 75%;
 }
