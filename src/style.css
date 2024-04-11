@@ -8,20 +8,10 @@
     );
     --txt-color-default: white;
     --txt-font-default: Verdana;
-    --txt-fontsize-default: 16px;
-    --txt-fontsize-header: 24px;
 }
 
 html, body {
     height: 100%;
-}
-
-*{
-    font-size: var(--txt-fontsize-default);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-size: var(--txt-fontsize-header);
 }
 
 body {
