@@ -41,7 +41,6 @@ body {
     margin: 0;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 16px;
 
     background: var(--bg-default);
     color: var(--txt-color-default);
@@ -116,8 +115,48 @@ button:active{
     text-align: center;
     text-decoration: none;
     color: var(--txt-color-default);
+
+    transition: transform 200ms;
+}
+
+.content-list > .content-item:hover{
+    border: 3px solid #005488;
+    background-color: #0067a7;
+    transform: scale(1.1);
 }
 
 .content-list > .content-item img {
     height: 75%;
+}
+
+.display-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-list > * {
+    flex-grow: 1;
+}
+
+.display-list-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.selected-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.selected-display > * {
+    width: min-content;
+}
+
+.active-display{
+    padding: 20px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
 }
