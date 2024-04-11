@@ -3,10 +3,11 @@
     <head>
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <header>
-            <h1>Welcome!</h1>
+            <h1 class="title">Welcome!</h1>
             <p>
                 Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit,
@@ -22,18 +23,44 @@
                     <img src="resources/images/programming_language_icon.png">
                     <div>Programming Languages</div>
                 </a>
+                <a href="#frameworks" class="content-item">
+                    <img src="resources/images/framework_icon.png">
+                    <div>Frameworks</div>
+                </a>
             </div>
         </header>
         <main>
             <section id="programming-languages">
                 <h1>Programming Languages</h1>
-                <ul>
-                    <li>lang1</li>
-                    <li>lang2</li>
-                    <li>lang3</li>
-                    <li>lang4</li>
-                    <li>lang5</li>
-                </ul>
+                <div class="display-list">
+                    <div class="display-list-buttons">
+                        <button>lang1</button>
+                        <button>lang2</button>
+                        <button>lang3</button>
+                    </div>
+                    <div class="selected-display">
+                        <div class="selected-display active-display">
+                            <h3>Content</h3>
+                            <p>
+                                Text
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="frameworks">
+                <h1>Frameworks</h1>
+                <div>
+                    <div>
+                        <h3>fr1</h3>
+                    </div>
+                    <div>
+                        <h3>fr2</h3>
+                    </div>
+                    <div>
+                        <h3>fr3</h3>
+                    </div>
+                </div>
             </section>
         </main>
     </body>
