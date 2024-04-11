@@ -8,6 +8,29 @@
     );
     --txt-color-default: white;
     --txt-font-default: Verdana;
+
+    --btn-bg-default: linear-gradient(
+        90deg,
+        #a20051 0%,
+        #d3006a 50%,
+        #a20051 100%
+    );
+    --btn-bg-hover: linear-gradient(
+        90deg,
+        #c40062 0%,
+        #ea1f85 50%,
+        #c40062 100%
+    );
+    --btn-bg-click: linear-gradient(
+        90deg,
+        #8e006a 0%,
+        #d3009e 50%,
+        #8e006a 100%
+    );
+    
+    --btn-color-border-default: #db2e85;
+    --btn-color-border-hover: #ff53a9;
+    --btn-color-border-click: #d62eac;
 }
 
 html, body {
@@ -35,6 +58,33 @@ main{
 
     display: flex;
     flex-direction: column;
+}
+
+button {
+    width: max-content;
+    
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--btn-color-border-default);
+    border-radius: 5px;
+    background: var(--btn-bg-default);
+    
+    font-family: var(--txt-font-default);
+    font-size: 1.2rem;
+    color: var(--txt-color-default);
+    
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    padding-left: 10px; 
+}
+button:hover{
+    border-color: var(--btn-color-border-hover);
+    background: var(--btn-bg-hover);
+}
+button:active{
+    border-color: var(--btn-color-border-click);
+    background: var(--btn-bg-click);
 }
 
 .content-list{
