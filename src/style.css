@@ -1,0 +1,12 @@
+:root{
+    --bg-default: #353535;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg-default);
+}
