@@ -26,8 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     margin: 0;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 16px;
 
     background: var(--bg-default);
@@ -40,7 +40,11 @@ body {
 }
 
 main{
+    margin-top: 30px;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .content-list{
@@ -66,8 +70,10 @@ main{
     align-items: center;
 
     text-align: center;
+    text-decoration: none;
+    color: var(--txt-color-default);
 }
 
-.content-list > div img {
+.content-list > .content-item img {
     height: 75%;
 }
